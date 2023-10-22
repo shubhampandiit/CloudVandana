@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+.popup {
+  position: fixed;
+</style>
+<body>
+ <form id="survey-form">
+  <div class="form-group">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required> <br> <br>
+  </div>
+  <div class="form-group">
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required> <br> <br>
+  </div>
+  <div class="form-group">
+    <label for="date-of-birth">Date of Birth:</label>
+    <input type="date" id="date-of-birth" name="date-of-birth" required> <br> <br>
+  </div>
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select Country</option>
+      <option value="India">India</option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+    </select> <br> <br>
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">other</label>
+  </div>
+  <div class="form-group">
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" name="profession" required> <br> <br>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required> <br> <br>
+  </div>
+  <div class="form-group">
+    <label for="mobile-number">Mobile Number:</label>
+    <input type="tel" id="mobile-number" name="mobile-number" required> <br> <br>
+  </div>
+  <button type="submit" id="submit-button">Submit</button>
+  <button type="reset" id="reset-button">Reset</button>
+</form>
+<script type="text/javascript" src="customer.js">
+</script>
+</body>
+</html>
